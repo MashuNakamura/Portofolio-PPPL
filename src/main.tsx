@@ -1,13 +1,21 @@
+import { Route, Routes, Navigate, BrowserRouter } from "react-router-dom";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
-import Home from "./Home";
+import Home from "./page/Home";
+import About from "./page/About";
 import DefaultLayout from "./layout/DefaultLayout";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <DefaultLayout>
-      <Home />
-    </DefaultLayout>
+    <BrowserRouter>
+      <DefaultLayout>
+        <Routes>
+          <Route path="/" element={<Navigate to="/home" replace />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+      </DefaultLayout>
+    </BrowserRouter>
   </StrictMode>
 );
