@@ -1,5 +1,5 @@
-import Navbar from "./Navbar";
-import Footer from "./Footer";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 export default function DefaultLayout({
   children,
@@ -9,7 +9,7 @@ export default function DefaultLayout({
   return (
     <div className="relative flex flex-col h-screen">
       <Navbar />
-      <main className="container mx-auto max-w-7xl px-6 flex-grow pt-16">
+      <main className="container mx-auto max-w-7xl px-6 flex-grow pt-8">
         {children}
       </main>
       <Footer />

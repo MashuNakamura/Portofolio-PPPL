@@ -4,12 +4,32 @@
 
 ### Framework Name: Vite + React TypeScript
 
+---
+
 ## Prerequisites
 
 Make sure you have the following installed on your system:
 
 - **Node.js** (version 18.0 or higher)
 - **npm** (version 8.0 or higher)
+
+---
+
+## How to Install Node.js and npm
+
+1. Download the latest Node.js LTS installer from the official website:  
+   https://nodejs.org/en/download/
+
+2. Run the installer and follow the setup wizard.
+
+3. After installation, open Command Prompt and check the installed versions:
+
+```bash
+node -v
+npm -v
+```
+
+---
 
 ## Setup Instructions
 
