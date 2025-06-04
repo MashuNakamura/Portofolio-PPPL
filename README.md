@@ -54,6 +54,15 @@ npm run dev
 
 The application will be available at `http://localhost:5173`
 
+---
+
+## Note
+
+### Route Available at :
+
+- Home Page or `http://localhost:5173/home`
+- About Page or `http://localhost:5173/about`
+
 ## Learning Resources
 
 - [Vite Documentation](https://vitejs.dev/)
