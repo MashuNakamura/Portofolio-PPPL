@@ -33,7 +33,7 @@ export default function Home() {
         </p>
         <p className="text-xl mt-10 text-center">Stay connect with me</p>
         <div className="flex justify-center">
-          <ul className="flex flex-col md:flex-row gap-x-4 mt-10 gap-y-4">
+          <ul className="flex flex-col md:flex-row gap-x-4 mt-9 gap-y-4">
             <a href="https://github.com/MashuNakamura">
               <div className="flex gap-3 bg-gray-700 text-white rounded-lg px-4 py-2 shadow hover:bg-gray-800 transition">
                 <img src="github.png" alt="GitHub" className="w-6 h-6" />
