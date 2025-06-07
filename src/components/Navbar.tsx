@@ -1,5 +1,5 @@
 import Hamburger from "./Hamburger";
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 
 export default function Navbar() {
   const location = useLocation();
@@ -16,28 +16,28 @@ export default function Navbar() {
       </div>
       <ul className="hidden sm:flex space-x-6 mr-5 text-xl">
         <li>
-          <a
-            className={`transition-colors ${
+          <Link
+            to="/home"
+            className={`transition-colors duration-200 ${
               isHomePage
                 ? "text-blue-400 font-semibold border-b-2 border-blue-400 pb-1"
                 : "text-white hover:text-blue-500"
             }`}
-            href="/home"
           >
             Home
-          </a>
+          </Link>
         </li>
         <li>
-          <a
-            className={`transition-colors ${
+          <Link
+            to="/about"
+            className={`transition-colors duration-200 ${
               isAboutPage
                 ? "text-blue-400 font-semibold border-b-2 border-blue-400 pb-1"
                 : "text-white hover:text-blue-500"
             }`}
-            href="/about"
           >
             About
-          </a>
+          </Link>
         </li>
       </ul>
     </header>

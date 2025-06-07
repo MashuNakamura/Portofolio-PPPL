@@ -14,6 +14,7 @@ createRoot(document.getElementById("root")!).render(
           <Route path="/" element={<Navigate to="/home" replace />} />
           <Route path="/home" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="*" element={<Navigate to="/home" replace />} />
         </Routes>
       </DefaultLayout>
     </BrowserRouter>
