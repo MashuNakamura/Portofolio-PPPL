@@ -37,7 +37,7 @@ npm -v
 
 ```bash
 git clone https://github.com/MashuNakamura/Portofolio-PPPL
-cd PPPL
+cd Portofolio-PPPL
 ```
 
 ### 2. Install Dependencies
