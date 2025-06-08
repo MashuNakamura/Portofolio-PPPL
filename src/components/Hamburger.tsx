@@ -17,7 +17,7 @@ export default function HamburgerComponents() {
       <Hamburger toggled={isOpen} toggle={setIsOpen} />
 
       <div
-        className={`fixed top-0 right-0 h-full w-64 bg-white dark:bg-slate-800 dark:text-white transform transition-transform duration-300 ${
+        className={`fixed top-0 right-0 h-full w-64 bg-white dark:bg-slate-800 text-gray-800 dark:text-white transform transition-transform duration-300 z-50 ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
@@ -32,7 +32,7 @@ export default function HamburgerComponents() {
                 className={`${
                   isHomePage
                     ? "text-blue-400 font-semibold border-b-2 border-blue-400 pb-1"
-                    : "text-white"
+                    : "text-gray-800 dark:text-white"
                 }`}
                 onClick={handleLinkClick}
               >
@@ -45,7 +45,7 @@ export default function HamburgerComponents() {
                 className={`${
                   isAboutPage
                     ? "text-blue-400 font-semibold border-b-2 border-blue-400 pb-1"
-                    : "text-white"
+                    : "text-gray-800 dark:text-white"
                 }`}
                 onClick={handleLinkClick}
               >
