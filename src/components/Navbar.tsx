@@ -3,7 +3,7 @@ import { useLocation, Link } from "react-router-dom";
 
 export default function Navbar() {
   const location = useLocation();
-  const isHomePage = location.pathname === "/home" || location.pathname === "/";
+  const isHomePage = location.pathname === "/home";
   const isAboutPage = location.pathname === "/about";
 
   return (
