@@ -6,7 +6,7 @@ export default function Home() {
       <img
         src="/halo.jpg"
         alt="Photo of Federico Matthew Pratama"
-        className="w-72 rounded-2xl shadow-md"
+        className="w-79 rounded-2xl shadow-md"
       />
       <div className="flex flex-col text-left relative p-8 bg-white rounded-xl shadow-md">
         <div className="font-bold text-2xl md:text-3xl text-center md:text-left">
